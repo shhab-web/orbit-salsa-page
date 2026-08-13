@@ -1,0 +1,74 @@
+═══════════════════════════════════════════════════════════════
+  ORBIT PRO — Sales Page Setup Guide
+═══════════════════════════════════════════════════════════════
+
+1. ADD YOUR REAL LINKS (2 minutes)
+─────────────────────────────────────
+Open: js/config.js
+
+Edit exactly two lines:
+  AFFILIATE_URL: 'https://your-real-checkout-link.com'
+  LIVE_DEMO_URL: 'https://your-hosted-orbit-demo.com'
+
+Every "Buy Now" and "Live Demo" button on the page — navbar, hero,
+pricing card, footer — updates automatically. You never edit HTML
+for this.
+
+Also in config.js: PRICE and ORIGINAL_PRICE control the price shown
+in the pricing card (set ORIGINAL_PRICE to '' to hide the strikethrough).
+
+2. ADD REAL SCREENSHOTS (10 minutes)
+─────────────────────────────────────
+The "Showcase" section currently has 4 placeholder frames. To swap
+one in:
+
+1. Save your screenshot to assets/images/ (e.g. shot-home.jpg)
+2. In index.html, find the matching .showcase-frame block and replace:
+     <div class="placeholder-note" data-i18n="showcase.replace1">...</div>
+   with:
+     <img src="assets/images/shot-home.jpg" alt="ORBIT home page">
+3. Repeat for the other three frames
+
+Recommended: 1600×1000px screenshots, taken from the live demo itself.
+
+3. RUN IT LOCALLY
+─────────────────
+Same requirement as ORBIT itself: needs a local server, not a
+double-clicked file (ES modules + the i18n JSON fetch are blocked by
+the browser on file://). Use VS Code's Live Server extension, or:
+  python -m http.server 8000
+
+4. ADDING THE "OTHER WORK" SECTION LATER
+────────────────────────────────────────────
+The nav and footer already have a disabled "Other Work" link,
+styled with a "Soon" badge, ready for when you build that section:
+
+  <a href="#" class="is-disabled" aria-disabled="true"
+     data-i18n="nav.otherWork">Other Work<span class="soon-badge"
+     data-i18n="nav.soon">Soon</span></a>
+
+When ready:
+1. Build the new page (e.g. work.html) using the same css/base/*
+   and css/components/* files already in this project — the design
+   system is shared, so it'll match automatically.
+2. Remove class="is-disabled" and the aria-disabled attribute
+3. Point href at your new page instead of "#"
+4. Remove the <span class="soon-badge">...</span>
+5. Repeat in both the desktop nav, mobile menu, and footer — search
+   the codebase for "otherWork" to find every instance
+
+5. ADDING A THIRD LANGUAGE
+─────────────────────────────
+Copy js/i18n/en.json to js/i18n/xx.json (xx = your language code),
+translate every value, then in js/i18n/engine.js add the code to
+`supported`, `names`, and `flags`. See ORBIT's own
+docs/06-rtl-guide.txt for the full walkthrough — the pattern is
+identical.
+
+6. SEO CHECKLIST BEFORE PUBLISHING
+──────────────────────────────────────
+□ Replace every REPLACE-WITH-... placeholder in index.html's <head>
+  (canonical URL, og:url, og:image, structured data price)
+□ Add a real assets/images/og-cover.jpg (1200×630px) for social shares
+□ Update the JSON-LD "price" field in <head> if you change PRICE in config.js
+□ Test the page with Google's Rich Results Test once live

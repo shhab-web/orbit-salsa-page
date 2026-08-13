@@ -1,0 +1,27 @@
+/* ==========================================================================
+   ORBIT PRO — Typography
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap');
+
+:root {
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-data: 'JetBrains Mono', monospace;
+  --font-arabic: 'IBM Plex Sans Arabic', sans-serif;
+
+  --fs-xs: 0.75rem; --fs-sm: 0.875rem; --fs-base: 1rem; --fs-lg: 1.125rem;
+  --fs-xl: 1.5rem; --fs-2xl: 2rem; --fs-3xl: 2.75rem; --fs-4xl: 3.75rem;
+}
+
+h1, h2, h3, h4 { font-family: var(--font-heading); font-weight: 500; line-height: 1.15; letter-spacing: -0.01em; }
+.font-data { font-family: var(--font-data); letter-spacing: 0.02em; font-variant-numeric: tabular-nums; }
+
+.eyebrow {
+  font-family: var(--font-data); font-size: var(--fs-xs); font-weight: 500;
+  letter-spacing: 0.25em; text-transform: uppercase; color: var(--cosmic-gold);
+}
+
+[dir="rtl"] { font-family: var(--font-arabic); }
+[dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3, [dir="rtl"] h4 { font-family: var(--font-arabic); letter-spacing: 0; }
+[dir="rtl"] .eyebrow { letter-spacing: 0.05em; }

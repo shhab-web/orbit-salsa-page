@@ -1,0 +1,46 @@
+/* ==========================================================================
+   ORBIT PRO — Hero
+   ========================================================================== */
+.hero { position: relative; padding-block: 160px var(--space-24); overflow: hidden; }
+.hero::before {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(ellipse 900px 600px at 20% 10%, rgba(212,175,55,0.10), transparent 60%),
+              radial-gradient(ellipse 700px 500px at 90% 60%, rgba(0,245,212,0.08), transparent 60%);
+  pointer-events: none;
+}
+.hero-grid { display: grid; grid-template-columns: 1fr; gap: var(--space-16); align-items: center; }
+@media (min-width: 1024px) { .hero-grid { grid-template-columns: 1fr 1fr; } }
+
+.hero-tag { display: inline-flex; align-items: center; gap: var(--space-2); padding: var(--space-2) var(--space-4); border-radius: var(--radius-full); margin-bottom: var(--space-6); }
+.hero-tag .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--data-green); animation: pulse-dot 2s ease infinite; }
+
+.hero h1 { font-size: var(--fs-3xl); margin-bottom: var(--space-6); }
+@media (min-width: 1024px) { .hero h1 { font-size: var(--fs-4xl); } }
+.hero h1 .accent { font-style: italic; background: linear-gradient(120deg, var(--cosmic-gold-light), var(--cosmic-gold)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.hero p.lede { font-size: var(--fs-lg); color: var(--text-secondary); margin-bottom: var(--space-8); max-width: 520px; }
+.hero-buttons { display: flex; flex-wrap: wrap; gap: var(--space-4); margin-bottom: var(--space-8); }
+.hero-proof { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-6); font-family: var(--font-data); font-size: var(--fs-xs); color: var(--neon-cyan); }
+
+/* CSS-only browser mockup (no screenshot dependency) */
+.browser-mock { border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--glass-border); box-shadow: 0 40px 100px rgba(0,0,0,0.5); animation: float 6s ease-in-out infinite; }
+.browser-bar { display: flex; align-items: center; gap: var(--space-3); padding: var(--space-3) var(--space-4); background: var(--space-navy); border-bottom: 1px solid var(--border); }
+.browser-dots { display: flex; gap: 6px; }
+.browser-dots span { width: 10px; height: 10px; border-radius: 50%; background: var(--text-muted); opacity: 0.5; }
+.browser-url { flex: 1; font-family: var(--font-data); font-size: 11px; color: var(--text-muted); background: var(--void-black); padding: var(--space-1) var(--space-3); border-radius: var(--radius-full); }
+.browser-body {
+  position: relative; aspect-ratio: 16/11; overflow: hidden;
+  background: radial-gradient(circle at 30% 30%, rgba(212,175,55,0.12), transparent 55%), var(--void-black);
+}
+.mock-star { position: absolute; width: 2px; height: 2px; background: #fff; border-radius: 50%; opacity: 0.7; }
+.mock-planet {
+  position: absolute; top: 50%; left: 50%; width: 65%; aspect-ratio: 1;
+  transform: translate(-50%, -50%); border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #d9ac63, #8a6a2f 55%, #3d2f14 85%);
+  box-shadow: 0 0 80px rgba(212,175,55,0.25);
+  animation: spin 40s linear infinite;
+}
+@keyframes spin { to { transform: translate(-50%, -50%) rotate(360deg); } }
+.mock-ring { position: absolute; top: 50%; left: 50%; border: 1px solid rgba(0,245,212,0.35); border-radius: 50%; transform: translate(-50%, -50%) rotateX(70deg); }
+.mock-hud { position: absolute; inset: 0; padding: var(--space-4); display: flex; flex-direction: column; justify-content: space-between; pointer-events: none; }
+.mock-hud-top { display: flex; justify-content: space-between; }
+.mock-chip { font-family: var(--font-data); font-size: 9px; padding: 4px 8px; border-radius: var(--radius-full); background: rgba(10,10,20,0.7); border: 1px solid var(--glass-border); color: var(--neon-cyan); }

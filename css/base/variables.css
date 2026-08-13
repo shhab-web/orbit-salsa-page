@@ -1,0 +1,44 @@
+/* ==========================================================================
+   ORBIT PRO — Sales Page Design Tokens
+   Palette matches the ORBIT product itself (same gold/cyan/pink space
+   theme) so the sales page and the live demo feel like one brand.
+   ========================================================================== */
+
+:root {
+  --void-black: #050508;
+  --space-black: #0a0a0f;
+  --space-navy: #12121e;
+  --space-purple: #1a1a2e;
+  --nebula-blue: #0d1b2a;
+
+  --cosmic-gold: #d4af37;
+  --cosmic-gold-light: #f4d03f;
+  --cosmic-gold-dark: #b8860b;
+  --gold-glow: rgba(212, 175, 55, 0.4);
+
+  --neon-cyan: #00f5d4;
+  --neon-pink: #f15bb5;
+  --neon-blue: #00bbf9;
+  --data-green: #00ff88;
+
+  --glow-gold: rgba(212, 175, 55, 0.3);
+  --glow-cyan: rgba(0, 245, 212, 0.2);
+
+  --text-primary: #f0f0f5;
+  --text-secondary: #a0a0b8;
+  --text-muted: #606070;
+
+  --glass-bg: rgba(10, 10, 20, 0.6);
+  --glass-border: rgba(212, 175, 55, 0.15);
+  --border: rgba(255, 255, 255, 0.08);
+
+  --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px;
+  --space-6: 24px; --space-8: 32px; --space-12: 48px; --space-16: 64px; --space-24: 96px;
+
+  --radius-sm: 8px; --radius-md: 16px; --radius-lg: 24px; --radius-full: 999px;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 0.2s; --dur-base: 0.4s;
+
+  --z-navbar: 100; --z-dropdown: 200; --z-modal: 1000;
+}

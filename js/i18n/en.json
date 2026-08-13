@@ -1,0 +1,140 @@
+{
+  "nav": {
+    "features": "Features",
+    "showcase": "Showcase",
+    "niches": "Who It's For",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "otherWork": "Other Work",
+    "soon": "Soon",
+    "liveDemo": "Live Demo",
+    "buyNow": "Buy Now"
+  },
+  "hero": {
+    "tag": "14 Pages · Real Three.js · Bilingual",
+    "title1": "A Space Template With",
+    "title2": "a Real Product Inside",
+    "lede": "Most space templates are one page with a rotating globe. ORBIT is a working platform — a live-style dashboard, an interactive sky map, real satellite tracking visuals, and a data center with sortable tables. Built once, reusable for news sites, science education, or a space startup's homepage.",
+    "viewDemo": "View Live Demo",
+    "getOrbit": "Get ORBIT Pro",
+    "proof1": "✓ Zero CDN dependencies",
+    "proof2": "✓ 100% EN/AR translated",
+    "proof3": "✓ No build tools required",
+    "mockLive": "● LIVE FROM ORBIT",
+    "mockAlt": "ISS ALT: 408 KM"
+  },
+  "stats": {
+    "pages": "Pages",
+    "languages": "Languages",
+    "cdn": "CDN Dependencies",
+    "strings": "Translated Strings"
+  },
+  "features": {
+    "eyebrow": "What's Actually Inside",
+    "title": "Not a landing page. A platform.",
+    "subtitle": "Every feature below is real and working in the live demo — not a screenshot mockup.",
+    "f1": {
+      "title": "Real Three.js 3D Earth",
+      "body": "Procedural shader-based continents, an atmosphere glow, orbital rings, and satellites that actually move — not a static image."
+    },
+    "f2": {
+      "title": "Live Mission Dashboard",
+      "body": "A full \"mission control\" style dashboard with a mini Earth widget, live charts, and animated counters — the page a real product would ship."
+    },
+    "f3": {
+      "title": "Interactive Sky Map",
+      "body": "A Canvas-based night sky with a real time slider — drag ±12 hours and watch stars and planets shift, no plugin required."
+    },
+    "f4": {
+      "title": "Full Arabic RTL Support",
+      "body": "Not a machine-translated afterthought — the layout, icons, forms, and even chart labels mirror correctly in Arabic."
+    },
+    "f5": {
+      "title": "Clean, Modular Code",
+      "body": "CSS split into base/components/layouts. JavaScript split by feature. No framework, no build step — open it and read it."
+    },
+    "f6": {
+      "title": "Offline-Ready",
+      "body": "A service worker caches every page and script on first visit, so the demo (and your version of it) keeps working with no connection."
+    }
+  },
+  "showcase": {
+    "eyebrow": "See It Running",
+    "title": "Every page, for real",
+    "subtitle": "No mockups. These are the actual pages, running in the actual browser.",
+    "cap1": "Home — Hero + Live Earth Scene",
+    "cap2": "Dashboard — Mission Control",
+    "cap3": "Observatory — Interactive Sky Map",
+    "cap4": "Full Arabic RTL Layout"
+  },
+  "niches": {
+    "eyebrow": "One Template, Three Resale Angles",
+    "title": "Built to be sold three different ways",
+    "subtitle": "The audience-selector on the demo's homepage already frames the product for these three buyers — you're not starting the pitch from zero.",
+    "n1": {
+      "tag": "Space News & Blogs",
+      "title": "A newsroom-ready homepage",
+      "body": "Live launch countdown, transmission ticker, and article layouts built for breaking coverage — ready for any space journalist or blog."
+    },
+    "n2": {
+      "tag": "Science & EdTech",
+      "title": "A classroom-ready toolkit",
+      "body": "The sky map and orbital simulator run on a school laptop plugged into a projector — a strong fit for physics and astronomy educators."
+    },
+    "n3": {
+      "tag": "NewSpace Startups",
+      "title": "An investor-facing platform",
+      "body": "Data Center and Dashboard give a space startup a credible homepage and internal ops view without hiring a design team."
+    }
+  },
+  "specs": {
+    "eyebrow": "What's Included",
+    "title": "Everything, not a stripped demo",
+    "i1": "14 fully built pages (Home, Dashboard, Live Tracker, News, Missions, Observatory, EdTech, Startup Directory, Data Center, About, Contact, Subscribe, 404, Coming Soon)",
+    "i2": "Full English + Arabic (RTL) translation — 431 strings, zero missing keys",
+    "i3": "Local Three.js — no CDN dependency to break later",
+    "i4": "Real NASA/Hubble imagery credits and sourcing notes included",
+    "i5": "Service worker for offline use",
+    "i6": "Setup, customization, and RTL guides in /docs",
+    "folderTitle": "Folder Structure"
+  },
+  "pricing": {
+    "badge": "Premium Template",
+    "sub": "One-time purchase. Full source, every page, both languages — nothing held back for a higher tier.",
+    "p1": "All 14 pages + full source code",
+    "p2": "English + Arabic RTL, ready to extend to more languages",
+    "p3": "Setup & customization documentation",
+    "p4": "No subscription, no recurring fees",
+    "cta": "Get ORBIT"
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Before you buy",
+    "q1": "Do I need to know Three.js to customize it?",
+    "a1": "No. The 3D scene works out of the box — you only need to touch the Three.js files if you want to change the Earth's look or add new objects. Everything else is plain HTML/CSS.",
+    "q2": "Does it need a build tool like Webpack or Vite?",
+    "a2": "No. Open it with any static server (even a free VS Code extension) and it runs. No npm install, no build step.",
+    "q3": "Can I add more languages besides English and Arabic?",
+    "a3": "Yes — the translation system is JSON-based and documented in /docs. Adding a language is copying one file and translating the values.",
+    "q4": "Can I use this for a client project?",
+    "a4": "Yes, personal and client work are covered by the license included with your purchase — check the license file for the exact terms before reselling or redistributing the template itself."
+  },
+  "footer": {
+    "tagline": "A space website template with a working product inside — not just a hero section.",
+    "explore": "Explore",
+    "more": "More",
+    "rights": "All rights reserved.",
+    "madeFor": "Made for people who'd rather sell a real product than a hero section."
+  },
+  "video": {
+    "eyebrow": "Product Preview",
+    "title": "See ORBIT in motion",
+    "subtitle": "The visual system, navigation, planetary presentation, and Arabic RTL switch — all in one walkthrough, before you buy."
+  },
+  "finalCta": {
+    "title": "Your next website doesn't have to look like everyone else's.",
+    "subtitle": "See the full experience running live, then decide.",
+    "demo": "Explore the Live Demo",
+    "buy": "Get ORBIT"
+  }
+}

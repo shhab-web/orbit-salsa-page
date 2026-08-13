@@ -1,0 +1,82 @@
+/* ==========================================================================
+   ORBIT PRO — Marketing Components
+   ========================================================================== */
+
+/* ---- Trust / stats strip ---- */
+.stats-strip { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--space-8) var(--space-16); padding: var(--space-8) 0; border-block: 1px solid var(--border); }
+.stat-item { text-align: center; }
+.stat-item .num { font-family: var(--font-data); font-size: var(--fs-2xl); color: var(--cosmic-gold); }
+.stat-item .label { font-size: var(--fs-xs); color: var(--text-muted); letter-spacing: 0.06em; text-transform: uppercase; margin-top: var(--space-1); }
+
+/* ---- Feature cards ---- */
+.feature-card {
+  padding: var(--space-8); border-radius: var(--radius-md); border: 1px solid var(--glass-border);
+  background: var(--space-navy); transition: transform var(--dur-base), border-color var(--dur-base);
+}
+.feature-card:hover { transform: translateY(-6px); border-color: rgba(212,175,55,0.35); }
+.feature-icon { width: 48px; height: 48px; border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; font-size: 22px; background: rgba(212,175,55,0.1); margin-bottom: var(--space-6); }
+.feature-card h3 { font-size: var(--fs-lg); margin-bottom: var(--space-3); }
+.feature-card p { color: var(--text-secondary); font-size: var(--fs-sm); }
+
+/* ---- Video demo ---- */
+.video-frame { border-radius: var(--radius-md); padding: var(--space-3); }
+.video-frame video { width: 100%; border-radius: var(--radius-sm); display: block; }
+
+/* ---- Showcase gallery (screenshot frames — swap in real screenshots later) ---- */
+.showcase-frame {
+  position: relative; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--glass-border);
+  aspect-ratio: 16/10; background: linear-gradient(135deg, var(--nebula-blue), var(--space-purple));
+  cursor: pointer;
+}
+.showcase-frame img { width: 100%; height: 100%; object-fit: cover; }
+.showcase-frame .cap {
+  position: absolute; inset-inline: 0; bottom: 0; padding: var(--space-4);
+  background: linear-gradient(to top, rgba(5,5,8,0.92), transparent);
+  font-size: var(--fs-sm); font-weight: 600;
+}
+.showcase-frame .placeholder-note {
+  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-data); font-size: 11px; color: var(--text-muted); text-align: center; padding: var(--space-4);
+}
+
+/* ---- Niche / audience cards (reused sales angle) ---- */
+.niche-card { padding: var(--space-8); border-radius: var(--radius-md); border: 1px solid var(--glass-border); background: var(--space-navy); }
+.niche-card .tag { font-family: var(--font-data); font-size: var(--fs-xs); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: var(--space-4); display: block; }
+.niche-card h3 { font-size: var(--fs-lg); margin-bottom: var(--space-3); }
+.niche-card p { color: var(--text-secondary); font-size: var(--fs-sm); }
+
+/* ---- Tech specs / what's included ---- */
+.specs-list { list-style: none; }
+.specs-list li { display: flex; align-items: flex-start; gap: var(--space-3); padding-block: var(--space-3); border-bottom: 1px solid var(--border); font-size: var(--fs-sm); color: var(--text-secondary); }
+.specs-list li:last-child { border-bottom: none; }
+.specs-list li::before { content: '✓'; color: var(--data-green); font-weight: 700; flex-shrink: 0; }
+
+.filetree { font-family: var(--font-data); font-size: 12.5px; color: var(--text-secondary); line-height: 1.9; background: var(--void-black); border: 1px solid var(--glass-border); border-radius: var(--radius-md); padding: var(--space-6); overflow-x: auto; white-space: pre; }
+.filetree .dir { color: var(--cosmic-gold); }
+.filetree .comment { color: var(--text-muted); }
+
+/* ---- Pricing / CTA ---- */
+.pricing-card { padding: var(--space-12) var(--space-8); border-radius: var(--radius-lg); border: 1px solid var(--cosmic-gold); background: radial-gradient(circle at 50% 0%, rgba(212,175,55,0.1), var(--space-navy)); text-align: center; box-shadow: 0 0 60px var(--glow-gold); }
+.pricing-badge { display: inline-block; padding: var(--space-1) var(--space-4); border-radius: var(--radius-full); background: var(--cosmic-gold); color: var(--void-black); font-size: var(--fs-xs); font-weight: 700; margin-bottom: var(--space-6); }
+.price-tag { font-family: var(--font-heading); font-size: var(--fs-4xl); margin-bottom: var(--space-2); }
+.price-tag .was { font-size: var(--fs-lg); color: var(--text-muted); text-decoration: line-through; margin-inline-end: var(--space-3); }
+.pricing-card .pricing-sub { color: var(--text-secondary); margin-bottom: var(--space-8); }
+
+/* ---- FAQ accordion ---- */
+.accordion-item { border-bottom: 1px solid var(--border); }
+.accordion-trigger { width: 100%; display: flex; justify-content: space-between; align-items: center; padding: var(--space-5) 0; text-align: start; font-size: var(--fs-base); font-weight: 500; }
+.accordion-trigger .plus { color: var(--cosmic-gold); transition: transform var(--dur-base); flex-shrink: 0; }
+.accordion-item.is-open .accordion-trigger .plus { transform: rotate(45deg); }
+.accordion-panel { max-height: 0; overflow: hidden; transition: max-height var(--dur-base) var(--ease-out); }
+.accordion-panel p { padding-bottom: var(--space-5); color: var(--text-secondary); font-size: var(--fs-sm); }
+
+/* ---- Footer ---- */
+.footer { border-top: 1px solid var(--border); padding: var(--space-16) var(--space-8) var(--space-8); background: var(--space-black); }
+.footer-grid { display: grid; gap: var(--space-12); grid-template-columns: 1fr; margin-bottom: var(--space-12); }
+@media (min-width: 768px) { .footer-grid { grid-template-columns: 1.4fr 1fr 1fr; } }
+.footer-brand p { color: var(--text-muted); font-size: var(--fs-sm); margin-top: var(--space-3); max-width: 280px; }
+.footer-col h5 { font-size: var(--fs-xs); letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-primary); margin-bottom: var(--space-4); }
+.footer-col a { display: block; color: var(--text-muted); font-size: var(--fs-sm); margin-bottom: var(--space-3); transition: color var(--dur-fast); }
+.footer-col a:hover { color: var(--cosmic-gold); }
+.footer-col a.is-disabled { pointer-events: none; }
+.footer-bottom { display: flex; flex-wrap: wrap; gap: var(--space-4); justify-content: space-between; padding-top: var(--space-6); border-top: 1px solid var(--border); font-size: var(--fs-xs); color: var(--text-muted); }

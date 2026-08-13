@@ -1,0 +1,14 @@
+/* ==========================================================================
+   ORBIT PRO — RTL Architecture
+   Logical properties handle most of this automatically; these are the
+   remaining literal-direction and absolutely-positioned exceptions.
+   ========================================================================== */
+
+[dir="rtl"] .dir-arrow { display: inline-block; transform: scaleX(-1); }
+[dir="rtl"] .navbar-links { margin-inline-start: auto; }
+[dir="rtl"] .accordion-trigger { text-align: right; }
+[dir="rtl"] .filetree { direction: ltr; text-align: left; } /* file paths stay LTR */
+[dir="rtl"] .price-tag { direction: ltr; display: inline-block; } /* currency figures stay LTR */
+[dir="rtl"] .stat-item .num { direction: ltr; }
+[dir="rtl"] .specs-list li::before { order: 2; }
+[dir="rtl"] .browser-url { direction: ltr; }

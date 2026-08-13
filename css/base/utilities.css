@@ -1,0 +1,8 @@
+/* ========================================================================== ORBIT PRO — Utilities ========================================================================== */
+.container { width: 100%; max-width: 1280px; margin-inline: auto; padding-inline: var(--space-6); }
+.text-gold { color: var(--cosmic-gold); }
+.text-cyan { color: var(--neon-cyan); }
+.text-muted { color: var(--text-muted); }
+.text-secondary { color: var(--text-secondary); }
+.glass { background: var(--glass-bg); border: 1px solid var(--glass-border); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+.visually-hidden { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }

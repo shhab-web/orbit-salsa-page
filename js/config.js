@@ -9,7 +9,7 @@
 
 export const CONFIG = {
   // TODO: replace with your real affiliate / checkout link (Gumroad, LemonSqueezy, etc.)
-  AFFILIATE_URL: 'https://gumroad.com/l/REPLACE-WITH-YOUR-PRODUCT-LINK',
+  AFFILIATE_URL: 'https://shhabster4.gumroad.com/l/eeejri?wanted=true',
 
   // ORBIT's own live demo
   LIVE_DEMO_URL: 'https://shhab7.github.io/orbit/',
